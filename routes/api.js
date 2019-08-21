@@ -6,16 +6,16 @@ const moviesCtrl = require('../controllers/api/movies')
 router.get('/movies', moviesCtrl.index)
 
 //Add a movie
-router.get('/movies', moviesCtrl.create)
+router.post('/movies', moviesCtrl.create)
 
 //Show DETAILS for a single movie by Id
 // router.get('/movies:id', moviesCtrl.show)
 
 //Update a single movie by Id
-// router.get('/movies:id', moviesCtrl.update)
+// router.put('/movies:id', moviesCtrl.update)
 
 //Delete a single movie by Id
-// router.get('/movies:id', moviesCtrl.remove)
+// router.delete('/movies:id', moviesCtrl.remove)
 
 module.exports = router;
 
