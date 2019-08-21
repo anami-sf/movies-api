@@ -1,20 +1,21 @@
 var express = require('express');
 var router = express.Router();
-const puppiesCtrl = require('../controllers/api/puppies')
+const moviesCtrl = require('../controllers/api/movies')
 
-//Retrieve all puppies
-//router.get('/puppies', puppiesCtrl.index)
+//Retrieve all movies
+router.get('/movies', moviesCtrl.index)
 
-//Add a puppy
-//router.get('/puppies', puppiesCtrl.create)
+//Add a movie
+router.get('/movies', moviesCtrl.create)
 
-//Show DETAILS for a single puppy by Id
-// router.get('/puppies:id', puppiesCtrl.show)
+//Show DETAILS for a single movie by Id
+// router.get('/movies:id', moviesCtrl.show)
 
-//Update a single puppy by Id
-// router.get('/puppies:id', puppiesCtrl.update)
+//Update a single movie by Id
+// router.get('/movies:id', moviesCtrl.update)
 
-//Delete a singel puppy by Id
-// router.get('/puppies:id', puppiesCtrl.remove)
+//Delete a single movie by Id
+// router.get('/movies:id', moviesCtrl.remove)
 
 module.exports = router;
+
