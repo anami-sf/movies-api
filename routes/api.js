@@ -9,13 +9,13 @@ router.get('/movies', moviesCtrl.index)
 router.post('/movies', moviesCtrl.create)
 
 //Show DETAILS for a single movie by Id
-// router.get('/movies:id', moviesCtrl.show)
+router.get('/movies/:id', moviesCtrl.show)
 
 //Update a single movie by Id
-// router.put('/movies:id', moviesCtrl.update)
+router.put('/movies/:id', moviesCtrl.update)
 
 //Delete a single movie by Id
-// router.delete('/movies:id', moviesCtrl.remove)
+router.delete('/movies/:id', moviesCtrl.remove)
 
 module.exports = router;
 
